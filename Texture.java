@@ -27,8 +27,6 @@ public class Texture{
         }
 
 
-
-
         int texture = glGenTextures();
         glBindTexture(GL_TEXTURE_2D, texture);
 
