@@ -87,7 +87,7 @@ public class Main {
             for (Cube cube : Cube.cubes){//Собственно отрисовуем
                 Mat4 properties = cube.getProperties(); // Получаем свойства каждого кубика и...
                 glUniformMatrix4fv(mod, false, properties.toFloatArray()); // ... перадем их в шейдер
-                glDrawArrays(GL_TRIANGLES, 0, 36); // Отрисовуем куб (12 треугольников)
+                glDrawArrays(GL_TRIANGLES, 0, 36); // Отрисовываем куб (12 треугольников)
             }
             glfwSwapBuffers(window);
         }
