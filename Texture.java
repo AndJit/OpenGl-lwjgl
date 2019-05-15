@@ -41,8 +41,6 @@ public class Texture{
         glGenerateMipmap(GL_TEXTURE_2D);
         glBindTexture(GL_TEXTURE_2D, 0);
 
-
-
         return texture;
     }
 

@@ -71,7 +71,7 @@ public class VertexArrays {
         bind(0);
     }
 
-    public static void addCube(String name){
+    public static void setDefaultCube(String name){
         VertexArrays.addTriangle(name, new float[]{
                 -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
                 0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
