@@ -14,9 +14,12 @@ public class Cube {
 
     Mat4 properties;
     Mat4 position;
+    private int texture;
 
-    public Cube(Vec3 position){
+    public Cube(Vec3 position, int texture){
         this.position = glm.translate(new Mat4(), position);
+        this.properties = this.position;
+        this.texture = texture;
     }
 
     public static void add(Cube cube){
@@ -35,4 +38,7 @@ public class Cube {
         return position;
     }
 
+    public int getTexture() {
+        return texture;
+    }
 }
